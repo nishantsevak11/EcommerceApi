@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce API</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .endpoint {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .endpoint h3 {
+            margin-top: 0;
+        }
+        code {
+            background-color: #f5f5f5;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>E-commerce API Documentation</h1>
+    
+    <div class="endpoint">
+        <h3>Get All Products</h3>
+        <p>Endpoint: <code>GET /api/products</code></p>
+        <p>Returns a list of all products in the database.</p>
+    </div>
+
+    <div class="endpoint">
+        <h3>Search Products by Name</h3>
+        <p>Endpoint: <code>GET /api/products/search?name=keyword</code></p>
+        <p>Search products by name. Replace 'keyword' with your search term.</p>
+    </div>
+
+    <div class="endpoint">
+        <h3>Get Products by Category</h3>
+        <p>Endpoint: <code>GET /api/products/category/category_name</code></p>
+        <p>Get all products in a specific category. Replace 'category_name' with the desired category.</p>
+    </div>
+
+    <div class="endpoint">
+        <h3>Chat with Bot</h3>
+        <p>Endpoint: <code>POST /api/chat</code></p>
+        <p>Send a message to the chatbot. Include a JSON body with a 'message' field.</p>
+    </div>
+</body>
+</html>
